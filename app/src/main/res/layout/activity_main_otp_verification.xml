@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".OtpVerificationActivity">
+
+    <TextView
+        android:id="@+id/otpVerificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        style="@style/TitleTextStyle"/>
+
+    <TextView
+        android:id="@+id/otpInstructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the 6 digit numbers sent to your email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpVerificationTitle"
+        android:layout_marginTop="8dp"
+        style="@style/SubtitleTextStyle"/>
+
+    <LinearLayout
+        android:id="@+id/otpInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpInstructionText"
+        android:layout_marginTop="16dp">
+
+
+        <EditText
+            android:id="@+id/otpEditText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            style="@style/OtpEditTextStyle"/>
+
+        <EditText
+            android:id="@+id/otpEditText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            style="@style/OtpEditTextStyle"/>
+
+        <EditText
+            android:id="@+id/otpEditText3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            style="@style/OtpEditTextStyle"/>
+
+        <EditText
+            android:id="@+id/otpEditText4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            style="@style/OtpEditTextStyle"/>
+
+        <EditText
+            android:id="@+id/otpEditText5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            style="@style/OtpEditTextStyle"/>
+
+        <EditText
+            android:id="@+id/otpEditText6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            style="@style/OtpEditTextStyle"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resendOtpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you didn't receive code, resend after 1:00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpInputLayout"
+        android:layout_marginTop="16dp"
+        style="@style/SubtitleTextStyle"/>
+
+    <Button
+        android:id="@+id/setNewPasswordButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Set New Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resendOtpText"
+        android:layout_marginTop="24dp"
+        style="@style/ButtonStyle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
